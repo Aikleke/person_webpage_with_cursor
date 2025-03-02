@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-brand">leekle的网站</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系方式</a>
+        </div>
+    </nav>
+
+    <!-- 照片轮播区 -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item active">
+                <img src="image1.jpg" alt="现代工作空间">
+                <p class="caption">技术创新始于专注</p>
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" alt="代码编程">
+                <p class="caption">编写代码，构建未来</p>
+            </div>
+            <div class="carousel-item">
+                <img src="image3.jpg" alt="开发环境">
+                <p class="caption">用技术改变世界</p>
+            </div>
+        </div>
+        <button class="carousel-button prev">&lt;</button>
+        <button class="carousel-button next">&gt;</button>
+    </div>
+
+    <!-- 个人简介 -->
+    <section class="about" id="about">
+        <img src="avatar.jpg" alt="头像" class="avatar">
+        <h2>关于我</h2>
+        <p>这里是你的个人简介...</p>
+    </section>
+
+    <!-- AI助手 -->
+    <div class="ai-assistant" id="ai-assistant">
+        <button class="ai-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chat-window" style="display: none;">
+            <div class="chat-header">
+                <span>AI助手</span>
+                <button class="close-chat">&times;</button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="输入消息...">
+                <button class="send-message">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 社交媒体链接 -->
+    <footer class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
